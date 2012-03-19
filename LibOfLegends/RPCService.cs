@@ -89,7 +89,7 @@ namespace LibOfLegends
 
 			// Initialise our RTMPS connection
 			RPCNetConnection = new NetConnection();
-			RPCNetConnection.Proxy = ConnectionData.Proxy.RTMPProxy;
+			//RPCNetConnection.Proxy = ConnectionData.Proxy.RTMPProxy;
 
 			// We should use AMF3 to behave as closely to the client as possible.
 			RPCNetConnection.ObjectEncoding = ObjectEncoding.AMF3;
