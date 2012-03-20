@@ -32,7 +32,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LibOfLegends.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluorineFx, Version=1.0.0.17, Culture=neutral, PublicKeyToken=a7967dc77bfb8005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RiotControl\bin\Release\FluorineFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Nil, Version=0.2.4462.28761, Culture=neutral, PublicKeyToken=fb0f0b036907ec96, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RiotControl\bin\Release\Nil.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -103,14 +117,7 @@
     <Content Include="services-config.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\FluorineFXMods\Source\FluorineFx\FluorineFx-4.0.csproj">
-      <Project>{A9B8375B-579D-4F8A-B00C-F2828DB58F3A}</Project>
-      <Name>FluorineFx-4.0</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\NilSharp\Nil\Nil.csproj">
-      <Project>{1334470A-3E7B-4A4F-A86A-7D6E908B89A7}</Project>
-      <Name>Nil</Name>
-    </ProjectReference>
+    <None Include="LibOfLegends.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
